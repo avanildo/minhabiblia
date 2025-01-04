@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<title> Pesquisas Biblicas Para Revigoramento Espiritual, Usando a Biblia João Ferreia De Almeida | minhabiblia.surge.sh</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Avanildo" >
+  <meta name="robots" content="index,follow">
+  <meta name="keyowrds" content="Biblia, Tradução, Leitura, Deus, Jeová, Yave, Yhvh,pesquisas biblicas">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Este site foi feito para um pesquisa espiritual pessoal. Não endossa qualquer religião, enaltece ao Verdadeiro Deus YHVH, Usa a tradução João Ferreia antiga como base">
+<link rel="stylesheet" href="css/w3c.css">
+<link rel="stylesheet" href="css/w3teal.css">
+<link rel="stylesheet" href="css/estilo.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/jquery2.js"></script>
+<script src="js/avanildo.js"></script>
+<style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+</style>
+<body onload="inicio()">
+
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;" id="mySidebar">
+  <a class="w3-bar-item w3-button w3-border-bottom w3-large" href="/">Minha Biblia</a>
+  <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Fechar <i class="fa fa-remove"></i></a>
+ <a class="w3-bar-item w3-button w3-black" href="/index.html">Inicio</a>
+    <div id="cap" class="custom-select" style="width:100%;"> </div><!--Apresenta os capitolos para selecionar  -->
+
+        <button class="w3-button w3-block w3-left-align" onclick="antigo1()">
+              Escrituras Hebraicas <i class="fa fa-caret-down"></i>
+        </button>
+
+         <div id="antigo" class="w3-hide w3-white w3-card"> </div>
+
+	        <button class="w3-button w3-block w3-left-align" onclick="novo1()">
+                 Escrituras Gregas <i class="fa fa-caret-down"></i></button>
+           <div id="novo" class="w3-hide w3-white w3-card"></div>
+
+           <div class="w3-card">
+
+			<hr />
+             <a href="#" class="w3-bar-item w3-button " onclick="carregar('/dados/paginas/pesquisa/index.html');">Materia de estudo</a>
+		     <a href="#" class="w3-bar-item w3-button " onclick="carregar('/download/index.html');">Download </a>
+		     <a href="#" class="w3-bar-item w3-button " onclick="carregar('/dados/perguntas-biblicas.html');">Perguntas Bíblicas</a>
+	         <a href="#" class="w3-bar-item w3-button "onclick="carregar('/dados/paginas/datas.html');" >Qem é o autor da biblia</a>
+     	     <a href="#" class="w3-bar-item w3-button " onclick="carregar('/dados/biblia/sobre.html');">Sobre Esta Tradução</a>
+		      <hr>
+		     <a href="#" class="w3-bar-item w3-button " onclick="embreve();"> Configuração</a>
+          </div>
+
+</nav>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+<div id="myTop" class="w3-container w3-top w3-black w3-large">
+  <p><i class="fa fa-bars w3-button w3-black w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+  <span id="myIntro" class="w3-hide"> Meu Site De Pesquisas Biblicas </span>
+
+  </p>
+  </div>
+
+   <header class="w3-container w3-black "  style="padding:64px 32px">
+    <h1 class="w3-xxxlarge w3-center" id="ava-titolo">Meu Site De Pesquisas Biblicas</h1>
+  </header>
+
+  <div class="w3-container" id="paginas">
+      <div id="inicio" style="position: relative;  border: 3px solid green;"></div>
+  </div>
+
+<footer class="w3-container w3-black" style="padding:32px">
+  <p>Este site é desenvolvido com softwre livre opensource
+     ele está hospedado em servidores gratuitos
+    <a href="https://surge.sh" target="_blank">surge.sh.</a>
+     e usando framework <a href="https://www.w3schools.com/w3css/" target="_blank">w3c.css</a>
+      para o template
+    </p>
+    <p>Desenvolvido por: Avanildo Pereira</p>
+</footer>
+</div>
+
+<script src="js/menu.js"></script>
+<script>
+/*
+function cap1(){ 
+       var cap = $("#paginas div");// selecionas os capitolos da biblia em
+       var j=0;
+        j=cap.length; 
+       formatarSelectCapitolo(j-3);
+}
+
+function formatarSelectCapitolo(numero){
+        var j,texto;
+             //texto='<select id="capLivro">';
+            texto="<select name='capLivro' id='capLivro' class='w3-select' onchange='location=this.value;'>"; 
+ 	for(j=1; j<=numero; j++){
+               texto+=`<option value = "#cap`+j+`">  Capitulo :`+j+`</option>`;
+	   }
+    texto+='</select>';
+    
+       // coloca os resultados em uma div de nome capitolo.
+     $("#cap").html(texto);
+
+    //document.getElementById("capitolo").innerHTML = texto;
+  }
+*/
+
+</script>
+
+</body>
+</html>
